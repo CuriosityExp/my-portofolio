@@ -1,10 +1,11 @@
 import Link from "next/link";
 import React from "react";
 import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
+import ProfileImage from "@/components/ProfileImage";
 export default function AboutPage() {
   return (
     <div className="flex flex-row justify-around w-full min-h-screen items-center gap-5">
-      <div className="w-1/2 flex flex-col">
+      <div className="w-2/6 flex flex-col">
         <h1 className="font-bold text-4xl text-right">Daniel Elisandro</h1>
         <h6 className="font-light text-md text-right mb-2">
           Full Stack Developer
@@ -32,7 +33,9 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-      <div className="w-1/2">Photo</div>
+      <div className="w-4/6 flex justify-center h-600 overflow-clip">
+        <ProfileImage />
+      </div>
     </div>
   );
 }
