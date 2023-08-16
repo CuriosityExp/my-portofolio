@@ -26,10 +26,9 @@ export default function AboutPage() {
             <Link target="_blank" href={"https://github.com/CuriosityExp"}>
               <IoLogoGithub size={60} />
             </Link>
-            <button className="bg-primary p-4 rounded-xl font-bold ">
-              {" "}
-              Download CV
-            </button>
+            <Link target="_blank" href={"https://docs.google.com/document/d/11FFTLVwEx2Dp5gXq7HcAj292LF4Uxh3k1Gp01mh9sgw/edit?usp=sharing"} className="bg-primary p-4 rounded-xl font-bold ">
+              View CV
+            </Link>
           </div>
         </div>
       </div>
