@@ -1,10 +1,15 @@
 import Link from "next/link";
 import React from "react";
 import {LiaGithubSquare} from "react-icons/lia"
-import {HiPhotograph} from "react-icons/hi"
 import {FaNodeJs} from "react-icons/fa"
 import {SiPuppeteer} from "react-icons/si"
 import {TbBrandReact, TbBrandMongodb, TbBrandOpenai} from "react-icons/tb"
+import Image from "next/image";
+const imageSize = {
+  maxWidth: 200
+}
+
+
 export default function PortfolioPage() {
   return (
     <div className="min-h-screen flex flex-col items-center">
@@ -43,30 +48,46 @@ export default function PortfolioPage() {
           </div>
         </div>
       </div>
-      <div className="w-3/4 snap-x bg-primary mt-4 h-500 flex justify-center items-center rounded-2xl shadow-xl overflow-x-scroll gap-5">
-        <div className="w-1/4 snap-center text-center">
-          <HiPhotograph size={200} />
-          <p>Caption </p>
+      <div className="max-w-5xl snap-x bg-primary px-2 mt-4 h-500 flex rounded-2xl shadow-xl overflow-x-scroll gap-5">
+        <div className="snap-center text-center flex flex-col justify-center items-center gap-1">
+          <Image src={"/landing-page.png"} alt="landing-page" placeholder="blur" style={imageSize} width={200} height={200} />
+          <p>Landing Screen Seeker </p>
         </div>
-        <div className="w-1/4 snap-center text-center">
-          <HiPhotograph size={200} />
-          <p>Caption </p>
+        <div className="snap-center text-center flex flex-col justify-center items-center gap-1">
+          <Image src={"/landing-content.png"} alt="landing-page" style={imageSize} width={500} height={500} sizes='100vw'/>
+          <p>Landing Screen Content </p>
         </div>
-        <div className="w-1/4 snap-center text-center">
-          <HiPhotograph size={200} />
-          <p>Caption </p>
+        <div className="snap-center text-center flex flex-col justify-center items-center gap-1">
+          <Image src={"/boarding.png"} alt="content" width={500} style={imageSize} height={500} sizes='100vw'/>
+          <p>Boarding</p>
         </div>
-        <div className="w-1/4 snap-center text-center">
-          <HiPhotograph size={200} />
-          <p>Caption </p>
+        <div className="snap-center text-center flex flex-col justify-center items-center gap-1">
+          <Image src={"/profile.png"} alt="Profile Screen" style={imageSize} width={500} height={500} sizes='100vw'/>
+          <p>Profile Screen</p>
         </div>
-        <div className="w-1/4 snap-center text-center">
-          <HiPhotograph size={200} />
-          <p>Caption </p>
+        <div className="snap-center text-center flex flex-col justify-center items-center gap-1">
+          <Image src={"/home.png"} alt="Home Screen" style={imageSize} width={500} height={500} sizes='100vw'/>
+          <p>Home Screen</p>
         </div>
-        <div className="w-1/4 snap-center text-center">
-          <HiPhotograph size={200} />
-          <p>Caption </p>
+        <div className="snap-center text-center flex flex-col justify-center items-center gap-1">
+          <Image src={"/search.png"} alt="landing-page" style={imageSize} width={500} height={500} sizes='100vw'/>
+          <p>Select Search Screen</p>
+        </div>
+        <div className="snap-center text-center flex flex-col justify-center items-center gap-1">
+          <Image src={"/search-query.png"} alt="landing-page" style={imageSize} width={500} height={500} sizes='100vw'/>
+          <p>Search Job Portal</p>
+        </div>
+        <div className="snap-center text-center flex flex-col justify-center items-center gap-1">
+          <Image src={"/querying.png"} alt="landing-page" style={imageSize} width={500} height={500} sizes='100vw'/>
+          <p>Scrapping Screen</p>
+        </div>
+        <div className="snap-center text-center flex flex-col justify-center items-center gap-1">
+          <Image src={"/bookmark.png"} alt="landing-page" style={imageSize} width={500} height={500} sizes='100vw'/>
+          <p>Bookmark Screen</p>
+        </div>
+        <div className="snap-center text-center flex flex-col justify-center items-center gap-1">
+          <Image src={"/todos.png"} alt="landing-page" style={imageSize} width={500} height={500} sizes='100vw'/>
+          <p>To-Do Screen</p>
         </div>
         
       </div>
