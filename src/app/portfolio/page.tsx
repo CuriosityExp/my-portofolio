@@ -6,7 +6,7 @@ import {SiPuppeteer} from "react-icons/si"
 import {TbBrandReact, TbBrandMongodb, TbBrandOpenai} from "react-icons/tb"
 import Image from "next/image";
 const imageSize = {
-  maxWidth: 200
+  maxWidth: 200,
 }
 
 
@@ -48,7 +48,7 @@ export default function PortfolioPage() {
           </div>
         </div>
       </div>
-      <div className="max-w-5xl snap-x bg-primary px-2 my-4 h-500 flex rounded-2xl shadow-xl overflow-x-scroll gap-5">
+      <div className="max-w-5xl snap-x bg-primary px-10 my-4 h-500 flex rounded-2xl shadow-xl overflow-x-scroll gap-5">
         <div className="snap-center text-center flex flex-col justify-center items-center gap-1">
           <Image src={"/landing-page.png"} alt="landing-page" style={imageSize} width={200} height={200} />
           <p>Landing Screen Seeker </p>
