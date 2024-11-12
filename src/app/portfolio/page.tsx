@@ -9,14 +9,15 @@ const imageSize = {
   maxWidth: 200,
 }
 
-
 export default function PortfolioPage() {
   return (
     <div className="min-h-screen flex flex-col items-center">
       <div className="w-1/2 mt-10">
         <h1 className="text-center text-4xl font-bold">Seeker</h1>
         <div className="text-center text-md flex justify-center items-center gap-2">
+          <div className="tooltip tooltip-left"  data-tip={"Github Repositories"}>
           <LiaGithubSquare size={32} />
+          </div>
           <Link href={"https://github.com/CuriosityExp/seeker"}><span className="text-blue-600 hover:underline">Server</span></Link>
           <Link href={"https://github.com/CuriosityExp/seeker-mobile-app"}><span className="text-blue-600 hover:underline"> Client</span></Link>
         </div>
