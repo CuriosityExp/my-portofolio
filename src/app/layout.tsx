@@ -15,7 +15,7 @@
       description: "Tech-savvy individual with a strong foundation in physics, specializing in web development and mobile applications.",
       images: [
         {
-          url: "https://danielelisandro.vercel.app/_next/image?url=%2Fdanielelisandro.png&w=750&q=75",
+          url: "https://danielelisandro.vercel.app/_next/image?url=%2Fdanielelisandro.png&w=1920&q=75",
           width: 800,
           height: 600,
           alt: "Profile Image of Daniel Elisandro",
